@@ -4,6 +4,7 @@ const SECRET_KEY = process.env.SECRET_KEY;
 function createTockenForUser(user) {
   const payload = {
     _id: user._id,
+    username : user.username,
     email: user.email,
     profileImageURL: user.profileImageURL,
     role: user.role,
